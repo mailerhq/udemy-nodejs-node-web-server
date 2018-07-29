@@ -38,7 +38,7 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
 	// res.send('<h1>hello express!</h1>');
 	res.render('home.hbs', {
-		pageTitle: 'About page',
+		pageTitle: 'Home page',
 		welcomeMessage: 'Hi'
 	});
 });
@@ -47,6 +47,13 @@ app.get('/about', (req, res) => {
 	// res.send('about page');
 	res.render('about.hbs', {
 		pageTitle: 'About page'
+	});
+});
+
+app.get('/projects', (req, res) => {
+	// res.send('about page');
+	res.render('projects.hbs', {
+		pageTitle: 'Portfolio page'
 	});
 });
 
